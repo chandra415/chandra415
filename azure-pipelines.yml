@@ -24,7 +24,5 @@ steps:
 - task: CmdLine@2
   inputs:
     script: |
-      cd $(Pipeline.Workspace)
-      ls -la
-      cd app1
-      ls -la
+      cd $(Pipeline.Workspace)/app1
+      cat build.txt
